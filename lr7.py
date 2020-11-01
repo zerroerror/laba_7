@@ -1,0 +1,10 @@
+import base64
+f=open('5-1.txt')
+text=f.read()
+f.close()
+d = base64.b64decode(text)
+decode_text= d.decode("UTF-8")
+f=open('5-1 decode.txt',"w")
+f.write(decode_text)
+f.close()
+print(decode_text)
